@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サービス提供責任者 業務マニュアル｜リールホーム</title>
+<style>
+:root{--navy:#16335B;--navy2:#1d4373;--gold:#C9A24B;--bg:#f4f6fa;--card:#fff;--line:#d9e0ea;--upd:#1d6b3a;--updbg:#eaf4ec;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Meiryo",sans-serif;background:var(--bg);color:#222;line-height:1.7;font-size:15px;}
+header{position:sticky;top:0;z-index:50;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:14px 16px 12px;box-shadow:0 2px 10px rgba(0,0,0,.15);}
+header .kicker{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:1px;}
+header h1{margin:2px 0 0;font-size:18px;font-weight:800;}
+header .sub{font-size:11px;opacity:.85;margin-top:2px;}
+.searchwrap{margin-top:10px;position:relative;}
+#search{width:100%;padding:10px 38px 10px 14px;border:none;border-radius:10px;font-size:15px;outline:none;}
+.searchwrap .ic{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:#9aa3af;font-size:16px;}
+#clear{position:absolute;right:10px;top:50%;transform:translateY(-50%);display:none;background:#e2e6ee;border:none;border-radius:50%;width:22px;height:22px;color:#555;font-size:13px;}
+main{max-width:760px;margin:0 auto;padding:14px 12px 60px;}
+.note-rev{background:var(--updbg);border:1px solid var(--upd);border-radius:10px;padding:11px 14px;font-size:12.5px;color:#1d4a2a;margin-bottom:14px;}
+.note-rev b{color:var(--upd);}
+.toc{background:var(--card);border-radius:12px;padding:8px 6px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.05);}
+.toc a{display:block;padding:9px 14px;color:var(--navy);text-decoration:none;font-weight:600;font-size:14px;border-bottom:1px solid #eef1f6;}
+.toc a:last-child{border-bottom:none;}
+.toc a:active{background:#eef2f8;}
+.toc .num{display:inline-block;width:26px;color:var(--gold);font-weight:800;}
+details.chap{background:var(--card);border-radius:12px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06);scroll-margin-top:140px;}
+details.chap>summary{list-style:none;cursor:pointer;padding:14px 16px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;font-weight:800;font-size:15.5px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold);}
+details.chap>summary::-webkit-details-marker{display:none;}
+details.chap>summary .arw{transition:transform .2s;font-size:13px;color:var(--gold);}
+details.chap[open]>summary .arw{transform:rotate(90deg);}
+.chap-body{padding:14px 16px 18px;}
+.lead{background:#f1f4f9;border-left:3px solid var(--gold);padding:9px 12px;font-size:12.5px;color:#444;border-radius:0 6px 6px 0;margin:0 0 12px;}
+h3.sec{color:var(--navy);font-size:15px;border-left:4px solid var(--gold);padding-left:9px;margin:18px 0 7px;}
+h4.sub{color:var(--gold);font-size:13.5px;margin:12px 0 4px;}
+ol,ul{margin:5px 0 10px;padding-left:22px;}
+li{margin:3px 0;}
+ul.dot{list-style:none;padding-left:4px;}
+ul.dot>li{position:relative;padding-left:16px;}
+ul.dot>li::before{content:"●";color:var(--navy);font-size:7px;position:absolute;left:0;top:8px;}
+.upd{color:var(--upd);font-weight:700;}
+.point{background:#fbf7ec;border-left:3px solid var(--gold);padding:8px 12px;border-radius:0 6px 6px 0;font-size:12.5px;margin:10px 0;}
+.point b{color:var(--navy);}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px 0;}
+table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:340px;}
+th{background:var(--navy);color:#fff;padding:7px 8px;text-align:left;font-weight:700;}
+td{padding:6px 8px;border:1px solid var(--line);vertical-align:top;}
+tr:nth-child(even) td{background:#eef2f8;}
+.time{white-space:nowrap;font-weight:600;color:var(--navy);}
+mark{background:#fff2a8;padding:0 1px;border-radius:2px;}
+.noresult{display:none;text-align:center;color:#888;padding:30px;font-size:14px;}
+footer{text-align:center;color:#9aa3af;font-size:11px;padding:20px;}
+.backtop{position:fixed;right:14px;bottom:18px;background:var(--navy);color:#fff;width:46px;height:46px;border-radius:50%;border:none;font-size:18px;box-shadow:0 3px 10px rgba(0,0,0,.25);display:none;z-index:60;}
+.hidden{display:none !important;}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">リールホーム</div>
+  <h1>サービス提供責任者 業務マニュアル</h1>
+  <div class="sub">訪問介護・施設サービス 統合版／東岡山・現場運用反映版</div>
+  <div class="searchwrap">
+    <input id="search" type="text" placeholder="キーワードで探す（例：服薬／ゴミ／受診）" autocomplete="off">
+    <span class="ic">🔍</span>
+    <button id="clear">✕</button>
+  </div>
+</header>
+<main>
+  <div class="note-rev"><b>■ この版について</b>　森口サービス提供責任者が作成したマニュアルに、岩崎施設長が東岡山の現場運用を反映した版です。<span class="upd">緑字</span>は運用変更箇所。「配茶」「ラジオ体操・口腔体操」「換気時間の固定」など現在実施していない工程は削除しています。</div>
+  <nav class="toc" id="toc">
+    <a href="#c0"><span class="num">―</span>はじめに　このマニュアルの使い方</a>
+    <a href="#c1"><span class="num">1</span>1日の流れ（日勤・夜勤）</a>
+    <a href="#c2"><span class="num">2</span>日常ケアの手順</a>
+    <a href="#c3"><span class="num">3</span>訪問サービスの手順</a>
+    <a href="#c4"><span class="num">4</span>施設運営の手順</a>
+    <a href="#c5"><span class="num">5</span>看取り期のケア</a>
+    <a href="#c6"><span class="num">6</span>新人教育（OJT・育成計画）</a>
+    <a href="#c7"><span class="num">7</span>清掃業務</a>
+  </nav>
+  <div class="noresult" id="noresult">該当する項目が見つかりませんでした</div>
+
+  <details class="chap" id="c0" open>
+    <summary><span>はじめに ― このマニュアルの使い方</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <p class="lead">サービス提供責任者および現場スタッフが、日々の業務を「同じ基準・同じ手順」で行えるようにまとめた業務手引きです。新人教育、応援時の確認、業務の見直しなど、迷ったときの“よりどころ”として使ってください。</p>
+      <h4 class="sub">運用ルール</h4>
+      <ul class="dot">
+        <li>手順は標準です。利用者ごとの個別事項は「個別ケア表」を必ず確認してください。</li>
+        <li>迷ったとき・判断に困ったときは、まず看護師または上長へ報告・相談します。</li>
+        <li>「困ったら、迷ったら、まず人を呼ぶ」を全員の基本とします。</li>
+        <li>改善点を見つけたら上長へ提案してください。マニュアルは育てていくものです。</li>
+      </ul>
+      <div class="point"><b>POINT</b>　本マニュアル内の「上長」は<span class="upd">サービス提供責任者・施設長</span>を指します（東岡山には副施設長は配置していません）。</div>
+    </div>
+  </details>
+
+  <details class="chap" id="c1">
+    <summary><span>第1章　1日の流れ（日勤・夜勤）</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <p class="lead">勤務帯ごとの基本的な動きです。時刻は目安。入居者の状態・行事・天候に合わせて柔軟に調整します。</p>
+      <h3 class="sec">1-1　日勤の流れ</h3>
+      <div class="tbl"><table>
+        <tr><th>時間</th><th>日課</th><th>業務内容・留意点</th></tr>
+        <tr><td class="time">8:50</td><td>朝礼</td><td>夜勤者からの申し送り、情報共有・予定確認、経営理念・価値基準の唱和。朝礼後、<span class="upd">5分間で情報共有・声かけを行い</span>、担当センサー（離床センサー）を決めて持つ。</td></tr>
+        <tr><td class="time">9:00〜</td><td>訪問介護</td><td>月間予定に沿って訪問介護を実施し、記録端末（カナエルタッチ）に入力。PHS（ピッチ）を持ち、出勤者ボードに番号を表示する。</td></tr>
+        <tr><td class="time">11:00</td><td>入居者誘導</td><td>居室からホールへ誘導。マスクは居室を出る際に着用し、食事直前まで着用する。</td></tr>
+        <tr><td class="time">12:00</td><td>昼食</td><td>手指消毒→配膳→食事介助→服薬→下膳→記録→テーブル拭き→口腔ケア→居室誘導。</td></tr>
+        <tr><td class="time">13:00〜</td><td>訪問介護</td><td>月間予定に沿って実施し記録を入力。<span class="upd">（現在ホールは閉めていない）</span></td></tr>
+        <tr><td class="time">15:00〜</td><td>余暇活動</td><td>レクリエーション活動は<span class="upd">イベントがある時（季節ごと）のみ実施する</span>。</td></tr>
+        <tr><td class="time">16:00</td><td>入居者誘導</td><td>夕食に向けて誘導。厨房不在時は夕食の準備をする。</td></tr>
+        <tr><td class="time">16:50</td><td>申し送り</td><td>日勤・看護師から夜勤者へ申し送り（役職者は必要時に参加）。</td></tr>
+        <tr><td class="time">17:00</td><td>夕食</td><td>手指消毒→配膳→食事介助→服薬→下膳→記録→テーブル拭き→口腔ケア→就寝介助→ゴミ捨て→記録。</td></tr>
+        <tr><td class="time">18:00</td><td>退勤前確認</td><td>施錠チェック・エアコン確認。厨房不在時は食器を洗う。</td></tr>
+      </table></div>
+      <div class="point"><b>POINT</b>　マスクは食後・服薬後・口腔ケア後に再着用。保管は居室のエアコンリモコン掛けを基本とし、口に当たっていた面を壁側にします。</div>
+      <div class="point"><b>POINT</b>　事業所内のキーを携帯した際は、絶対に紛失しないよう管理します。</div>
+      <h3 class="sec">1-2　夜勤の流れ</h3>
+      <div class="tbl"><table>
+        <tr><th>時間</th><th>日課</th><th>業務内容・留意点</th></tr>
+        <tr><td class="time">16:50</td><td>申し送り</td><td>日勤・看護師から夜勤者へ申し送り。</td></tr>
+        <tr><td class="time">17:00</td><td>夕食</td><td>手指消毒→配膳→食事介助→服薬→下膳→記録→テーブル拭き→口腔ケア→就寝介助→清掃→記録。</td></tr>
+        <tr><td class="time">18:00</td><td>施錠・片付け</td><td>玄関施錠、ふきん洗濯、マスク回収→洗濯→乾燥、エアコン再確認、エレベーター施錠。</td></tr>
+        <tr><td class="time">19:00</td><td>記録・対応</td><td>記録、コール対応。人が少なくなった時点で外側の自動ドアを必ず施錠（防犯）。</td></tr>
+        <tr><td class="time">20:00</td><td>巡回・服薬</td><td>必要な入居者の巡回（体調不良・安否確認など）。眠前薬の対応。施錠チェック。</td></tr>
+        <tr><td class="time">21:00</td><td>消灯</td><td>必要な処置を行い消灯。</td></tr>
+        <tr><td class="time">22:00</td><td>記録・対応</td><td>記録・コール対応。お茶を作る。</td></tr>
+        <tr><td class="time">23:00</td><td>巡回</td><td>巡回。翌日の通所（デイ）利用者の準備リストを確認し準備する。</td></tr>
+        <tr><td class="time">0:00〜4:00</td><td>巡回</td><td>2:00を目安に巡回。1人夜勤で休憩に入るときは事務所を施錠する。</td></tr>
+        <tr><td class="time">5:00</td><td>起床準備</td><td>玄関開錠・掃除・新聞準備、起床介助。薬・目薬・インスリンの準備、厨房の確認。</td></tr>
+      </table></div>
+      <div class="point"><b>POINT</b>　1人夜勤で休憩に入るときは、必ず事務所の鍵をかけます。</div>
+      <div class="point"><b>POINT</b>　1階・2階の清掃用モップは毎週日曜日に洗濯します（汚染用洗濯機を使用）。</div>
+    </div>
+  </details>
+
+  <details class="chap" id="c2">
+    <summary><span>第2章　日常ケアの手順</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <p class="lead">毎日くり返し行う基本ケアの手順です。安全と尊厳を最優先に、声かけを徹底します。</p>
+      <h3 class="sec">2-1　服薬</h3>
+      <ol>
+        <li>お薬カレンダーを確認し、服薬が必要な入居者の薬を出す。</li>
+        <li>入居者の目の前で、名前・日付・いつの薬か（例：朝食後）を声に出して確認し、薬の封を切る。</li>
+        <li>口に薬が入った後は、必ず飲み込むまで目で確認する。</li>
+        <li>服薬後、服薬管理表へサイン（または押印）する。</li>
+        <li>内服薬の空袋入れに空袋を入れる（本人が拒否した薬も入れる）。</li>
+      </ol>
+      <h4 class="sub">留意点</h4>
+      <ul class="dot">
+        <li>血圧・甲状腺ホルモンなどの薬は、飲まないことで体調不良になることがあるため特に注意する。</li>
+        <li><span class="upd">現在は必ずスプーンを使って職員が口まで運ぶ。</span></li>
+        <li>口に入れたつもりでも服の上に落ちていることがあるため気をつける。</li>
+        <li><span class="upd">服薬介助に使ったスプーンは、下膳食器と一緒に厨房へ出す。</span></li>
+      </ul>
+      <h4 class="sub">担当の分担</h4>
+      <ul class="dot">
+        <li>基本は看護師が内服薬をすべて対応する（不在時はヘルパーが対応）。</li>
+        <li>起床・朝食前・眠前薬はヘルパーが対応する。</li>
+        <li>昼・夕食後の内服薬確認は看護師が行う。</li>
+        <li>眠前薬・インスリン・点眼薬は、必要になる時間の直前にナース室から出す（紛失防止）。</li>
+      </ul>
+      <div class="point"><b>POINT</b>　食後の下膳は服薬後に行います。看護師から服薬終了の報告を受けてから下膳します。</div>
+      <h3 class="sec">2-2　口腔ケア</h3>
+      <ol>
+        <li>感染予防のためプラスチック手袋を装着する。</li>
+        <li>個別ケア表に沿って歯ブラシ・口腔ケアスポンジ等を使用する（個人用のコップと歯ブラシを準備）。<span class="upd">使用後は洗剤で洗う。</span></li>
+        <li><span class="upd">夕食後に個人用のコップを洗う。</span></li>
+      </ol>
+      <h3 class="sec">2-3　体重測定</h3>
+      <ol>
+        <li>毎月第1水曜日に体重測定を行う（目安：昼食前の誘導時にホールで実施）。</li>
+        <li>体重計は特殊機械浴室に置いてある。</li>
+        <li>声かけをして測定する。</li>
+        <li>体重管理表に記入する（服の重さを<span class="upd">500g</span>として引いた数字を記入）。</li>
+      </ol>
+      <div class="point"><b>POINT</b>　立位保持が困難な方は無理をせず、車いすを使用して測定します（車いすの重さを差し引く）。</div>
+      <h3 class="sec">2-4　介護記録の書き方</h3>
+      <p class="lead">提供したサービスと利用者の状態を正しく残すための大切な業務です。短文でわかりやすく入力します。</p>
+      <ul class="dot">
+        <li>入居者の要望・ADL・状態に合った項目を使用して記入する。</li>
+        <li>記録は1回の支援につき、いずれかの欄に短文で1か所入力すればよい。</li>
+        <li>入浴時はバイタル（体温・血圧・脈拍）を記録する。</li>
+      </ul>
+      <h4 class="sub">記録の例文</h4>
+      <ul class="dot">
+        <li>起床・排泄：「体調確認を行う。特に体調不良はない。」</li>
+        <li>就寝・口腔ケア：「声かけをしてパジャマへ一部介助で更衣する。」</li>
+        <li>入浴：「見守りにて入浴する。」「体調不良のため看護師に相談し清拭対応とする。」</li>
+        <li>服薬：「見守りで服薬介助を行う。」</li>
+        <li>バイタル記入例：「体温 36.4℃　血圧 121/67　脈 70」</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="chap" id="c3">
+    <summary><span>第3章　訪問サービスの手順</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <p class="lead">訪問介護として提供する入浴・生活掃除・美容などの手順です。提供のたびに声かけを行い、変更があれば必ず報告します。</p>
+      <h3 class="sec">3-1　訪問入浴</h3>
+      <h4 class="sub">準備</h4>
+      <ol>
+        <li>訪問予定を確認する。</li>
+        <li>バイタルを確認する（生活支援記録表を確認。必要に応じて看護師に確認）。</li>
+        <li>衣服・入浴用品を準備する（着替え・シャンプー類・バスタオル1枚・フェイスタオル2〜3枚・入浴後の化粧水/軟膏/クリーム）。</li>
+      </ol>
+      <h4 class="sub">入浴</h4>
+      <ul class="dot">
+        <li>支援のたびに必ず声かけをする。</li>
+        <li>シャワー湯は自分の手で湯温を確認してからかける。</li>
+        <li>全身の状態（皮膚・打撲など）を確認する。</li>
+        <li>入浴後は湯冷めしないようしっかり拭き取る。</li>
+        <li>異変があった際は看護師に連絡（不在時は他の職員を呼ぶ）。</li>
+      </ul>
+      <h4 class="sub">記録・後片付け</h4>
+      <ul class="dot">
+        <li>記録端末（カナエルタッチ）で記録する。</li>
+        <li>着替え（洗濯物）を撮影し、洗濯業者へ出す袋へ入れる（ポケット内を必ず確認）。</li>
+        <li>バスタオルは本人専用のものを使用する（水虫予防）。</li>
+        <li>最後の片付けで浴室のエアコン・電気を消し入口を施錠。換気扇は24時間つけたまま。</li>
+      </ul>
+      <div class="point"><b>POINT</b>　入浴中止（体調不良・外出など）は、生活支援表の特記事項に記入し、サービス提供責任者→担当ケアマネジャーへ報告します。</div>
+      <h3 class="sec">3-2　訪問生活掃除</h3>
+      <ol>
+        <li>訪問予定を確認する。</li>
+        <li>本人へ居室掃除の声かけをする。</li>
+        <li>居室掃除用品を準備する。</li>
+        <li>居室を掃除する（リネン交換・洗面台・ベッド周辺・トイレ・床など）。本人の物品を使う場合は了承を得る。</li>
+        <li>掃除道具を片付ける（雑巾は洗濯機で洗う）。</li>
+        <li>記録端末へ記録し、シーツ交換・清掃表へ記入する。</li>
+      </ol>
+      <h4 class="sub">寝具（リース）について</h4>
+      <ul class="dot">
+        <li>掛け布団・肌掛け布団・ベッドパッド・枕は予備が各2枚／月。超える交換は別途実費。</li>
+        <li>ラバーシーツの交換は2週間に1回（反対面を使用）。失禁跡がある場合は随時交換。</li>
+      </ul>
+      <div class="point"><b>POINT</b>　費用がかかるからといって入居者の処遇を下げることは決してしないでください。使用に差し支える汚染はこれまで通り交換します。</div>
+      <h3 class="sec">3-3　訪問美容</h3>
+      <ol>
+        <li>事務員が入居者へ訪問美容利用の意向を確認し、業者と連絡をとる。</li>
+        <li><span class="upd">毎月第2水曜日 9:00〜11:00 に訪問美容（業者）が来訪する。</span></li>
+        <li>カット希望者はホールで待機する（居室の方は順に声かけして誘導）。</li>
+        <li>パーマ・カラー希望者を先に誘導する。</li>
+      </ol>
+      <div class="point"><b>POINT</b>　<span class="upd">現在は2階談話室を使用しています。</span></div>
+    </div>
+  </details>
+
+  <details class="chap" id="c4">
+    <summary><span>第4章　施設運営の手順</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <h3 class="sec">4-1　換気</h3>
+      <p class="lead" style="border-left-color:var(--upd);background:var(--updbg);"><span class="upd">現在は換気の時間帯は決めておらず、感染対策・環境衛生のため適宜対応しています。</span>雨天時は全員で、天候に合わせて換気箇所を随時調整します。</p>
+      <h3 class="sec">4-2　備品・消耗品の管理</h3>
+      <ol>
+        <li>衛生用品・生活用品が半分程度になったら対応する。</li>
+        <li>施設の用品は所定の倉庫から出す。家族管理の場合は<span class="upd">ホワイトボードへ記入し、担当者がご家族へ連絡する。</span></li>
+        <li>倉庫から出したら備品提供表へ記入する。</li>
+      </ol>
+      <ul class="dot">
+        <li>在庫が2〜3個と少なくなったら事務員へ報告する。</li>
+        <li>補充が必要な物・家族依頼分は<span class="upd">ホワイトボードへ記入する。</span></li>
+      </ul>
+      <h3 class="sec">4-3　病院受診時の対応</h3>
+      <ol>
+        <li>受診が必要と判断したら、看護師・上長に報告する。</li>
+        <li>かかりつけ医に報告して指示をもらう（看護師）。</li>
+        <li>上長が家族へ連絡・相談する。</li>
+        <li>受診準備をする（付き添う職員の決定、車の準備など）。</li>
+        <li>出発→病院到着→受付→診察→精算。必要時は経過を上長へ報告。</li>
+        <li>帰所後、受診状況を看護師・上長に報告する。</li>
+        <li>上長から家族へ報告する。</li>
+        <li>オプションサービスの用紙に記入し、受診記録を周知する。</li>
+      </ol>
+      <h4 class="sub">持っていく物</h4>
+      <ul class="dot">
+        <li>看護サマリー、各種保険証・受給者証・診察券（コピー可）、紹介状</li>
+        <li>携帯電話、運転免許証、受診料・駐車料金、職員証、筆記用具</li>
+        <li>マスク（職員・入居者）、タオル、袋、必要に応じて傘・着替え・パッド類など</li>
+      </ul>
+      <h3 class="sec">4-4　夜勤帯の緊急対応</h3>
+      <p class="lead">夜間に転倒等の事故・急な体調不良が発生したときの手順です。落ち着いて順番に対応します。</p>
+      <ol>
+        <li>呼吸停止・激痛・出血など一刻を争うときは、ためらわず119番通報し救急要請する。</li>
+        <li>施設長へ報告する（不在時は上長の順）。</li>
+        <li>かかりつけ医に報告し指示をもらう。</li>
+        <li>家族へ連絡する。</li>
+        <li>救急搬送時はオンコールスタッフへ出勤要請する。</li>
+      </ol>
+      <h4 class="sub">119番通報で伝える内容</h4>
+      <ul class="dot">
+        <li>「救急です」と伝える／施設の種別／住所・電話番号（緊急連絡カード参照）</li>
+        <li>利用者の状態・氏名・性別・年齢・病歴／搬送先の希望病院（看護サマリー参照）／対応者の名前</li>
+      </ul>
+      <div class="point"><b>POINT</b>　救急要請時は、青ファイル（緊急時情報・看護サマリー）を必ず持って付き添います。</div>
+      <h3 class="sec">4-5　ゴミ集め</h3>
+      <ul class="dot">
+        <li>時間の目安は<span class="upd">16:30〜18:00の間</span>。</li>
+        <li>対象：各フロアのホール・トイレ・手洗い場・事務所・洗濯場・浴室・居室など。</li>
+        <li>不燃ごみ（食器類の割れ物）は新聞に包んで捨てる。</li>
+      </ul>
+      <h3 class="sec">4-6　離床センサー（見守り機器）</h3>
+      <ul class="dot">
+        <li>画面がアラート色（例：ピンク）になったら、対象の利用者の状況を確認する。</li>
+        <li>離床アラートは「解除」操作をしない限り表示が戻らない（対応済みのチェック機構を兼ねる）。</li>
+        <li>解除しないと次のアラートが判定できないため、必ず解除操作を行う。</li>
+      </ul>
+      <div class="point"><b>POINT</b>　機器の詳しい使用方法はメーカーの取扱説明書（別紙）を確認してください。</div>
+      <h3 class="sec">4-7　コスト管理の基本</h3>
+      <ul class="dot">
+        <li>社内向け印刷は必要時のみ裏紙を使い、原則白黒・カラーは最小限。</li>
+        <li>照明・エアコンは基準の目安（冷房27〜28℃、暖房18〜19℃）。電気代を受けている居室は強制設定にしない。</li>
+        <li>充電器は満充電になったら電源を落とす。</li>
+        <li>職員・入居者の紹介は紹介会社を使わず、全職員で紹介に協力する。</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="chap" id="c5">
+    <summary><span>第5章　看取り期のケア</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <p class="lead">ご本人の苦痛をやわらげ、尊厳を守り、ご家族に寄り添う、特に大切な時期です。看護師・医師・上長と密に連携しチームで支えます。</p>
+      <h3 class="sec">5-1　基本姿勢</h3>
+      <ul class="dot">
+        <li>ご本人の安楽・尊厳を最優先にする。</li>
+        <li>ご家族の思いに寄り添い、こまめに状態を共有する。</li>
+        <li>医師の指示・方針のもと、看護師を中心にチームで対応する。</li>
+        <li>少しの変化も見逃さず、観察したことを記録し看護師・上長へ報告する。</li>
+      </ul>
+      <h3 class="sec">5-2　観察と記録</h3>
+      <div class="tbl"><table>
+        <tr><th>記録表</th><th>主な内容</th></tr>
+        <tr><td>看取り期バイタル表</td><td>体温・血圧・脈拍・呼吸・酸素飽和度などの経過。</td></tr>
+        <tr><td>食事・水分摂取表</td><td>食事量・水分摂取量の経過。</td></tr>
+        <tr><td>体位変換時間表</td><td>褥瘡予防のための体位変換の時間・体位。</td></tr>
+        <tr><td>危篤時観察表</td><td>危篤期に入った際の観察記録。</td></tr>
+      </table></div>
+      <div class="point"><b>POINT</b>　どの記録表をいつから使うかは医師・看護師の判断に従います。迷ったら必ず看護師へ確認してください。</div>
+      <h3 class="sec">5-3　苦痛の緩和と日常ケア</h3>
+      <ul class="dot">
+        <li>口腔ケア：乾燥しやすいため、こまめに口腔内を潤し清潔を保つ。</li>
+        <li>体位変換：褥瘡・苦痛予防のため、定められた時間で体位を変える。</li>
+        <li>環境：室温・採光・においに配慮し、静かで落ち着ける環境を整える。</li>
+        <li>声かけ：意識が低下していても、ふだんどおり優しく声をかける。</li>
+      </ul>
+      <h3 class="sec">5-4　危篤時・急変時の対応</h3>
+      <ol>
+        <li>状態の変化に気づいたら、ただちに看護師・上長へ報告する。</li>
+        <li>医師・看護師の指示に従い、緩和を最優先に対応する。</li>
+        <li>ご家族への連絡は上長・看護師が中心となって行う。</li>
+        <li>観察した内容を記録表に残す。</li>
+      </ol>
+      <div class="point"><b>POINT</b>　看取り期の方針は、事前にご本人・ご家族・医師と取り決めた内容に従います。必ず最新の方針を確認してください。</div>
+    </div>
+  </details>
+
+  <details class="chap" id="c6">
+    <summary><span>第6章　新人教育（OJT・育成計画）</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <p class="lead">新しく入った職員が安心して成長できるよう、計画的に育てます。教える側の心構えも大切にします。</p>
+      <h3 class="sec">6-1　育成の目標</h3>
+      <ul class="dot">
+        <li>社会人・組織人・職業人（専門職）としての自覚を身につける。</li>
+        <li>職場の理念を理解し、日々の実践につなげる。</li>
+        <li>担当業務に必要な知識・技術を習得し、実践できる。</li>
+        <li>「利用者主体のサービスとは何か」を考え、実践できる職員になる。</li>
+      </ul>
+      <h3 class="sec">6-2　育成のスケジュール</h3>
+      <div class="tbl"><table>
+        <tr><th>時期</th><th>区分</th><th>到達目標</th></tr>
+        <tr><td>配属前研修</td><td>OFF-JT</td><td>理念・事業概要・就業規則などを学び、介護職としての基本的な知識・倫理観を身につける。</td></tr>
+        <tr><td>配属後〜1か月</td><td>OJT</td><td>日勤帯の業務を通じて利用者との関わり方・基本ケア（食事・入浴・排泄など）を学ぶ。</td></tr>
+        <tr><td>1か月</td><td>振り返り面談</td><td>現在の状況・課題について面談。悩みや課題を共有し不安を軽減する。</td></tr>
+        <tr><td>2〜3か月</td><td>OJT</td><td>基本ケアを実践。早出・遅出の一人立ち、夜勤業務に向けた準備を進める。</td></tr>
+      </table></div>
+      <h3 class="sec">6-3　初日のOJTチェック項目</h3>
+      <ul class="dot">
+        <li>施設概要・館内ラウンド・下駄箱・ロッカー・制服・暗証番号</li>
+        <li>職員トイレ・健康チェック・駐車場・職員紹介</li>
+        <li>経営理念カード・メール・勤怠・給与明細</li>
+        <li>勤務表・就業規則・各種規程／日勤の流れ・顧客情報・1on1・バディ紹介</li>
+      </ul>
+      <div class="point"><b>POINT</b>　2日目以降〜約1か月は、①ホール見守り→②配膳・下膳→③居室誘導→④訪問入浴・生活援助 の順で段階的に実務を覚えます。</div>
+      <h3 class="sec">6-4　指導者の心得</h3>
+      <ul class="dot">
+        <li>監視・指示ではなく、寄り添う人でいる。仕事の喜びも一緒に感じてもらう。</li>
+        <li>「早くするより、最後まで・確認しながら」を教える。できたことは必ずほめる。</li>
+        <li>自分ひとりで背負わない。新人の情報は仲間と共有する。</li>
+        <li>愚痴や不満は部外の人に。チーム内で悪いレッテルを作らない。</li>
+      </ul>
+      <div class="point"><b>POINT</b>　新人は「できなくて当たり前」。ほめられる経験があるから、叱られても挫折せずに頑張れます。</div>
+    </div>
+  </details>
+
+  <details class="chap" id="c7">
+    <summary><span>第7章　清掃業務</span><span class="arw">▶</span></summary>
+    <div class="chap-body">
+      <p class="lead">居室・共有部分を清潔・安全に保つための大切な仕事です。場所・方法・頻度を守り、終わったら必ずチェック表に記入します。</p>
+      <h3 class="sec">7-1　基本ルール</h3>
+      <ul class="dot">
+        <li>居室掃除は、訪問介護（生活援助）が入っている方以外を担当する。</li>
+        <li>シーツ交換・居室掃除が終わったら「シーツ交換・清掃表」に記入する。</li>
+        <li>掃除道具の購入・内容・頻度・場所の変更など、改善案があれば必ず上長に相談する。</li>
+        <li>居室に入る際は、基本的に事前に本人の承諾を得る。</li>
+      </ul>
+      <h3 class="sec">7-2　場所・方法・頻度</h3>
+      <div class="tbl"><table>
+        <tr><th>場所</th><th>方法</th><th>頻度</th></tr>
+        <tr><td>居室</td><td>訪問生活掃除に準じる</td><td>シーツ交換2週/1回、居室掃除 週/1回</td></tr>
+        <tr><td>ベッド下</td><td>掃除機・モップ等でホコリ除去</td><td>毎回</td></tr>
+        <tr><td>窓</td><td>ガラス用洗剤・ふきんで拭き掃除</td><td>月/1回</td></tr>
+        <tr><td>クローゼット</td><td>掃除機・ふきんでホコリ除去</td><td>毎回</td></tr>
+        <tr><td>カーテンレール</td><td>ふきんでホコリ除去</td><td>年2回（5月・10月）</td></tr>
+        <tr><td>エアコン</td><td>掃除機でフィルター掃除</td><td>年2回（5月・10月）</td></tr>
+        <tr><td>玄関（中）</td><td>掃き・拭き掃除、カウンター拭き</td><td>毎回</td></tr>
+        <tr><td>玄関（外）</td><td>タイル部分を清掃</td><td>月/1回</td></tr>
+        <tr><td>施設外回り</td><td>ゴミ拾い・溝掃除・草取り・灰皿掃除</td><td>週/1回</td></tr>
+        <tr><td>エレベーター</td><td>鏡拭き・床掃除</td><td>毎日</td></tr>
+        <tr><td>廊下・手すり</td><td>床掃除、手すりは除菌スプレーで拭く</td><td>床:毎回／手すり:毎日</td></tr>
+        <tr><td>トイレ</td><td>便器・床・汚れ箇所の掃除</td><td>毎日</td></tr>
+        <tr><td>浴室（扉溝）</td><td>ホコリ・髪の毛の除去</td><td><span class="upd">月2回</span></td></tr>
+      </table></div>
+    </div>
+  </details>
+
+  <footer>あをに IKIGAI グループ　株式会社リールステージ<br>東岡山・現場運用反映版／施設長確認済み</footer>
+</main>
+<button class="backtop" id="backtop">↑</button>
+<script>
+const search=document.getElementById('search');
+const clearBtn=document.getElementById('clear');
+const chaps=Array.from(document.querySelectorAll('details.chap'));
+const toc=document.getElementById('toc');
+const noresult=document.getElementById('noresult');
+const backtop=document.getElementById('backtop');
+chaps.forEach(c=>{c.dataset.html=c.querySelector('.chap-body').innerHTML;});
+function clearMarks(){chaps.forEach(c=>{c.querySelector('.chap-body').innerHTML=c.dataset.html;c.classList.remove('hidden');});}
+function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function doSearch(q){
+  q=q.trim();
+  clearBtn.style.display=q?'block':'none';
+  if(!q){clearMarks();toc.classList.remove('hidden');noresult.style.display='none';chaps.forEach((c,i)=>{c.open=(i===0);});return;}
+  toc.classList.add('hidden');
+  const re=new RegExp(esc(q),'gi');
+  let hit=0;
+  chaps.forEach(c=>{
+    const body=c.querySelector('.chap-body');
+    const raw=c.dataset.html;
+    if(body.textContent.toLowerCase().includes(q.toLowerCase())){
+      body.innerHTML=raw.replace(/>([^<]+)</g,(m,p1)=>'>'+p1.replace(re,'<mark>$&</mark>')+'<');
+      c.classList.remove('hidden');c.open=true;hit++;
+    }else{c.classList.add('hidden');c.open=false;}
+  });
+  noresult.style.display=hit?'none':'block';
+}
+search.addEventListener('input',e=>doSearch(e.target.value));
+clearBtn.addEventListener('click',()=>{search.value='';doSearch('');search.focus();});
+toc.addEventListener('click',e=>{
+  const a=e.target.closest('a');if(!a)return;e.preventDefault();
+  const el=document.getElementById(a.getAttribute('href').slice(1));
+  el.open=true;setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),50);
+});
+window.addEventListener('scroll',()=>{backtop.style.display=window.scrollY>400?'block':'none';});
+backtop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
